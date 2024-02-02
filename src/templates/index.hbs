@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/lux/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.cs" rel="stylesheet">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    {{> header }}
+<div class=" p-4 row row-cols-1 row-cols-md-5 g-4">
+    {{#each characters}}
+
+    
+      <div class="col p-3">
+        <div class="card h-100">
+            <img class="h-100 object-fit-cover" src="{{img}}">
+          <div class="bg-dark card-body">
+            <h5 class="text-light card-title">{{name}}</h5>
+          </div>
+        </div>
+      </div>
+
+    {{/each}}
+</div>
+    {{> footer }}
+</body>
+
+
+<style>
+    .row{
+        margin-right: 0;
+    }
+
+</style>
+</html>
