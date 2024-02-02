@@ -28,7 +28,9 @@ fastify.get("/", (req, reply) => {
 
 // Run the server!
 try {
-    await fastify.listen({ port: 3000 })
+    await fastify.listen({ port: 3000 , host:"0.0.0.0"} , (err, address)=>{
+        console.log(address)
+    })
 } catch (err) {
     fastify.log.error(err)
     process.exit(1)
