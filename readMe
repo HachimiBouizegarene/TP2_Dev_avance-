@@ -1,0 +1,7 @@
+Commandes pour lancer l'application : 
+    git clone https://github.com/HachimiBouizegarene/TP2_Dev_avance-.git
+    cd TP2_Dev_avance-
+    docker build -t TP2 .
+    docker run -p 3000:3000 TP2
+
+Voila vous pouvez aller sur http://localhost:3000/ !
