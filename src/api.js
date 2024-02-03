@@ -1,7 +1,10 @@
 import { createHash } from 'crypto';
 
-const publicKey = "d4c4a1d08220ddcb5e3137d41b46e5d0"
-const privateKey = "ee9839a677f517a64519ae3c2cb0066418ad764a"
+import dotenv from "dotenv"
+dotenv.config()
+
+const publicKey = process.env.PUBKEY
+const privateKey = process.env.PRIKEY
 
 /**
  * Récupère les données de l'endpoint en utilisant les identifiants
